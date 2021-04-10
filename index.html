@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  function checkAnswer(){
+    let tenantId = document.getElementById('tenant-id').value;
+    if (tenantId === "poc")
+        location = 'https://poc.coffeetok.live';
+    return false;
+  }
+</head>
+<body>
+  
+<h2>Login your company</h2>
+
+<form onSubmit="return checkAnswer();">
+<input id="tenant-id" type="text" maxlength="55" class="box" autofocus value="poc" />
+<input type="submit" class="submit" value="Login" />
+</form>
+  
+</body>
+</html>
